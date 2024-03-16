@@ -703,3 +703,32 @@
     width: 100%;
   }
 }
+.reveal-on-scroll {
+  overflow: hidden; /* Hide text overflow */
+  line-height: 1.2; /* Adjust for consistent text height */
+}
+
+.reveal-on-scroll span {
+  position: relative; /* Position text elements for animation */
+  display: inline-block; /* Enforce block-level behavior for animation */
+  opacity: 0; /* Initially hidden */
+  animation: reveal-text 1s ease-in-out forwards; /* Define reveal animation */
+}
+
+.reveal-on-scroll span:nth-child(1) {
+  animation-delay: 0.2s; /* Different delays for each line */
+}
+
+.reveal-on-scroll span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+@keyframes reveal-text {
+  from {
+    transform: translateY(100%); /* Move text up initially */
+  }
+  to {
+    transform: translateY(0); /* Bring text into view */
+    opacity: 1; /* Reveal text with opacity */
+  }
+}
