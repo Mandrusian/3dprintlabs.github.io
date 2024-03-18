@@ -93,16 +93,60 @@
   padding: 0 50px;
 }
 
-#sign-up {
-  background-color: #000; /* Set background to black */
-  color: #fff; /* Set text color to white */
-  padding: 10px 20px; /* Adjust padding as needed */
-  border: none; /* Remove border */
-  cursor: pointer; /* Indicate clickable element */
+body{
+  margin:0;
+  padding:0;
 }
 
-#sign-up:hover {
-  box-shadow: 0 0 5px 3px #007bff; /* Create neon blue glow */
+.btn{
+cursor:pointer;
+  position:relative;
+  padding:10px 20px;
+  background:white;
+  font-size:28px;
+  border-top-right-radius:10px;
+  border-bottom-left-radius:10px;
+  transition:all 1s;
+  #sign-up:after,&:before{
+    content:" ";
+    width:10px;
+    height:10px;
+    position:absolute;
+    border :0px solid #fff;
+    transition:all 1s;
+    }
+  #sign-up:after{
+    top:-1px;
+    left:-1px;
+    border-top:5px solid black;
+    border-left:5px solid black;
+  }
+  #sign-up:before{
+    bottom:-1px;
+    right:-1px;
+    border-bottom:5px solid black;
+    border-right:5px solid black;
+  }
+  #sign-up:hover{
+    border-top-right-radius:0px;
+  border-bottom-left-radius:0px;
+    // background:rgba(0,0,0,.5);
+    // color:white;
+    &:before,&:after{
+      
+      width:100%;
+      height:100%;
+      // border-color:white;
+    }
+  }
+}
+
+#sign-up{
+  background:#ffebee;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 #navbar__logo {
