@@ -5,7 +5,7 @@
   font-family: 'Kumbh Sans', sans-serif;
   scroll-behavior: smooth;
 }
-#signup {
+#sign-up {
   background-color: #000; /* Set background to black */
   color: #fff; /* Set text color to white */
   padding: 10px 20px; /* Adjust padding as needed */
@@ -13,7 +13,7 @@
   cursor: pointer; /* Indicate clickable element */
 }
 
-#signup:hover {
+#sign-up:hover {
   box-shadow: 0 0 5px 3px #007bff; /* Create neon blue glow */
 }
 
