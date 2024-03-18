@@ -103,8 +103,12 @@
   transition: all 0.3s ease;
 }
 
+.button:hover {
+  box-shadow: 0 0 5px 3px #007bff;
+}
+
 .navbar__links:hover {
-  color: #9518fc;
+  box-shadow: 0 0 5px 3px #007bff;
   transition: all 0.3s ease;
 }
 
@@ -176,6 +180,10 @@
     height: 80px;
     margin: 0;
   }
+
+  .button:hover {
+  box-shadow: 0 0 5px 3px #007bff;
+}
 
   #mobile-menu {
     position: absolute;
