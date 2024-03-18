@@ -5,6 +5,17 @@
   font-family: 'Kumbh Sans', sans-serif;
   scroll-behavior: smooth;
 }
+#signup {
+  background-color: #000; /* Set background to black */
+  color: #fff; /* Set text color to white */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none; /* Remove border */
+  cursor: pointer; /* Indicate clickable element */
+}
+
+#signup:hover {
+  box-shadow: 0 0 5px 3px #007bff; /* Create neon blue glow */
+}
 
 .navbar {
   background: #131313;
